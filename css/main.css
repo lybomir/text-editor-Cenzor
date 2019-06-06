@@ -1,0 +1,71 @@
+body {
+    background: rgba(128, 128, 128, .1);
+}
+
+.main {
+    width: 500px;
+    height: 400px;
+    margin: 100px auto;
+    border: 1px solid rgba(255, 0, 0, .4);
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(255, 0, 0, .1);
+}
+
+.cenzor-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.cenzor-block div {
+    margin: 20px 0 0 20px;
+}
+
+h1 {
+    text-align: center;
+    color: rgba(255, 0, 0, .5);
+    margin: 20px 0 0 0;
+}
+
+.warning-words {
+    font-size: 18px;
+    color: red;
+}
+
+.add-area{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.button-add {
+    margin: 0 0 0 20px;
+}
+
+.enter-words {
+    width: 240px;
+    outline-color: red;
+}
+
+.button-add,
+.button-cenzor {
+    width: 100px;
+    height: 25px;
+    border: 1px solid rgba(255, 0, 0, .1);
+    border-radius: 0 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+    background: linear-gradient(to bottom, rgba(255, 0, 0, .3), white);
+    color: rgba(0, 0, 0, .6);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.button-add:active,
+.button-cenzor:active {
+    background: linear-gradient(to top, rgba(255, 0, 0, .3), white);
+}
+
+.text-area {
+    width: 95%;
+    height: 160px;
+    overflow-y: scroll;
+    resize: none;
+    outline-color: green;
+}
